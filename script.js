@@ -33,21 +33,14 @@ function togglePopup(input, label) {
   // Validar valor do input
   usernameInput.addEventListener("change", (e) => {
     let valor = e.target.value;
-  
-    if (valor.length < 3) {
+
+    if (valor.length < 3 or parseInt("username")) 
+    {
       // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
       usernameHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
       estilizarInputIncorreto(usernameInput, usernameHelper);
       inputsCorretos.username = false;
     } 
-    
-    else if(persentInt("username"))
-      {
-         usernameHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
-        estilizarInputIncorreto(usernameInput, usernameHelper);
-        inputsCorretos.username = false;
-        
-      }
     
     else {
       // Adicionar estilos dinâmicos se o valor estiver correto
