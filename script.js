@@ -34,7 +34,7 @@ function togglePopup(input, label) {
   usernameInput.addEventListener("change", (e) => {
     let valor = e.target.value;
 
-    if (valor.length < 3 or parseInt("username")) 
+    if (valor.length < 3 ||  parseInt("username")) 
     {
       // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
       usernameHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
